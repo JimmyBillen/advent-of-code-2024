@@ -11,7 +11,7 @@ def get_input(day, as_list=True):
     day:
         An integer representing the puzzle day (1-25) in Advent of Code.
     as_list:
-        A bool, if True it returns input as a list, seperated at each newline. If false it strips the string.    
+        A bool, if True it returns input as a list, seperated at each newline. If false it strips the total the string.    
     """
 
     with open('sessioncookie.txt') as f:

@@ -1,10 +1,11 @@
 from utils import get_input
 
-
 def add(tup1, tup2):
+    """Addition of tuples."""
     return (tup1[0] + tup2[0],tup1[1] + tup2[1])
 
 def inbounds(text, coord):
+    """Check if coordinate is inbound."""
     (x,y) = coord
     return (0 <= x < len(text[0])) & (0 <= y < len(text))
 
