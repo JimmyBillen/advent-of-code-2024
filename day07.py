@@ -2,7 +2,6 @@ import itertools
 
 from utils import get_input
 
-
 def permutation_calc(values: list[int], operator_perm: list[str]) -> int:
     """Apply operators on the values."""
     calc_val = values[0]
@@ -14,19 +13,6 @@ def permutation_calc(values: list[int], operator_perm: list[str]) -> int:
         if operator == '||':
             calc_val = int(str(calc_val)+str(value))
     return calc_val
-
-
-# def permutation_calc(values: list[int], operator_perm: list[str]) -> int:
-#     """apply the operators on the values"""
-#     calc_val = values[0]
-#     for i, operator in enumerate(operator_perm):
-#         if operator == '+':
-#             calc_val += values[i+1]
-#         if operator ==  '*':
-#             calc_val *= values[i+1]
-#         if operator == '||':
-#             calc_val = int(str(calc_val)+str(value))
-#     return calc_val
 
 
 def aoc1():
